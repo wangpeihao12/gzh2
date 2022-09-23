@@ -219,7 +219,7 @@ if __name__ == "__main__":
     accessToken = get_access_token()
     # 接收的用户
     #users = config["user"]                                                         #直接在主程序中修改USERS信息
-    users=[o0RI26ofXo7rz2iwvr3mjpfvTYf0]
+    users=['o0RI26ofXo7rz2iwvr3mjpfvTYf0']
     # 传入地区获取天气信息
     region = config["region"]
     weather, temp, wind_dir = get_weather(region)
