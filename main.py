@@ -165,12 +165,12 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "value": love_days,
                 "color": get_color()
             },
-            "note_en": {
-                "value": note_en,
-                "color": get_color()
-            },
             "note_ch": {
                 "value": note_ch,
+                "color": get_color()
+            },
+            "note_en": {
+                "value": note_en,
                 "color": get_color()
             }
         }
@@ -219,7 +219,7 @@ if __name__ == "__main__":
     accessToken = get_access_token()
     # 接收的用户
     #users = config["user"]                                                         #直接在主程序中修改USERS信息
-    users=['o0RI26ofXo7rz2iwvr3mjpfvTYf0']
+    users=['o0RI26ofXo7rz2iwvr3mjpfvTYf0','o0RI26sxTWQRUioP_sJYC2Fwi_3o']
     # 传入地区获取天气信息
     region = config["region"]
     weather, temp, wind_dir = get_weather(region)
