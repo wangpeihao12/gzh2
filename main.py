@@ -203,7 +203,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
  
  
 if __name__ == "__main__":
-    try:
+    try:                                                                         #打开根目录配置文件
         with open("config.txt", encoding="utf-8") as f:
             config = eval(f.read())
     except FileNotFoundError:
